@@ -1,0 +1,250 @@
+/* 전체 바디 스타일 */
+* {
+  box-sizing: border-box; /* 박스 모델 설정 */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* 맑은 하늘 색상 */
+  color: #343a40; /* 텍스트 기본 색상 */
+  line-height: 1.6; /* 줄 간격 증가 */
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #007bff; /* 헤더 배경색 */
+  color: white;
+  padding: 15px; /* 패딩 조정 */
+  text-align: center; /* 중앙 정렬 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  width: 100%; /* 전체 너비 사용 */
+}
+
+/* 헤더 내 네비게이션 스타일 */
+header nav {
+  margin-top: 10px; /* 헤더와 네비 간격 */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline; /* 가로 정렬 */
+  margin-right: 15px; /* 항목 간격 조정 */
+}
+
+header nav ul li a {
+  color: white; /* 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 드롭다운 스타일 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block; /* 드롭다운 표시 */
+}
+
+/* 컨테이너 스타일 */
+.container {
+  display: flex; /* 사이드바와 메인 콘텐츠를 플렉스로 배치 */
+  width: 100%; /* 전체 너비 사용 */
+  max-width: 1200px; /* 최대 너비 설정 (원하는 경우 조정 가능) */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 사이드바 스타일 */
+aside {
+  width: 25%; /* 사이드바 너비를 전체의 25%로 설정 */
+  background-color: #f8f9fa; /* 밝은 배경색 */
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  height: calc(100vh - 60px); /* 화면 높이에 맞추기 (헤더 높이 조정) */
+  position: sticky; /* 스티키로 설정 */
+  top: 0; /* 스크롤 시 고정 위치 */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 15px 0; /* 항목 간격 조정 */
+}
+
+nav ul li a {
+  color: #007bff; /* 링크 색상 */
+  text-decoration: none;
+  font-weight: bold; /* 두꺼운 글씨 */
+  transition: color 0.3s ease, padding-left 0.3s ease; /* 부드러운 색상 전환 */
+}
+
+nav ul li a:hover {
+  color: #0056b3; /* 마우스 오버 시 색상 변경 */
+  padding-left: 5px; /* 마우스 오버 시 약간의 여백 증가 */
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+  width: 75%; /* 메인 콘텐츠 너비를 전체의 75%로 설정 */
+  padding: 20px; /* 패딩 추가 */
+  background-color: white; /* 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+h1 {
+  font-size: 2.5rem; /* 메인 제목 크기 */
+  margin-bottom: 15px; /* 아래 여백 조정 */
+}
+
+h2 {
+  color: #0056b3; /* 제목 색상 */
+  margin-top: 15px; /* 위쪽 여백 조정 */
+  border-bottom: 2px solid #e0e0e0; /* 섹션 구분선 추가 */
+  padding-bottom: 10px; /* 구분선 아래 여백 추가 */
+}
+
+/* 리스트 스타일 */
+ul {
+  padding-left: 20px; /* 리스트 들여쓰기 */
+}
+
+li {
+  margin-bottom: 10px; /* 항목 간격 조정 */
+}
+
+/* 경고 문구 스타일 */
+.warning {
+  font-style: italic;
+  color: red; /* 빨간색 */
+  font-weight: bold; /* 두꺼운 글씨 */
+  margin: 20px 0; /* 위 아래 여백 추가 */
+  padding: 10px; /* 내부 여백 */
+  background-color: #ffe5e5; /* 경고 배경색 */
+  border: 1px solid #ff0000; /* 경고 테두리 */
+}
+
+/* 푸터 스타일 */
+footer {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #343a40; /* 푸터 배경색 */
+  color: white;
+  width: 100%; /* 전체 너비 사용 */
+}
+
+footer a {
+  color: white;
+  margin: 0 10px; /* 간격 조정 */
+  transition: color 0.3s ease; /* 부드러운 색상 전환 */
+}
+
+footer a:hover {
+  color: #ffd700; /* 마우스 오버 시 색상 변경 */
+}
+
+/* 반응형 디자인 */
+
+/* 예시: 미디어 (노트 10 : 최대 480px) */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 중앙 정렬 */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* 세로 간격 조정 */
+  }
+
+  main {
+    padding: 15px; /* 모바일 패딩 조정 */
+    width: 100%; /* 모바일에서는 전체 너비 사용 */
+  }
+
+  header {
+    padding: 10px; /* 모바일 헤더 패딩 조정 */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* 제목 크기 조정 */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 서브 제목 크기 조정 */
+  }
+}
+
+/* 예시: 미디어 (갤럭시 탭 S7 : 최대 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  aside {
+    width: 30%; /* 태블릿에서 사이드바 너비 조정 */
+  }
+
+  main {
+    width: 70%; /* 태블릿에서 메인 콘텐츠 너비 조정 */
+  }
+
+  main {
+    padding: 20px; /* 태블릿 패딩 조정 */
+  }
+
+  h1 {
+    font-size: 2rem; /* 제목 크기 조정 */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 서브 제목 크기 조정 */
+  }
+}
+
+/* 예시: 미디어 (아이패드 프로 11 : 최소 769px) */
+@media (min-width: 769px) {
+  aside {
+    width: 25%; /* 데스크탑에서 사이드바 너비 조정 */
+  }
+
+  main {
+    width: 75%; /* 데스크탑에서 메인 콘텐츠 너비 조정 */
+  }
+
+  main {
+    padding: 30px; /* 패딩 증가 */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* 제목 크기 조정 */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* 서브 제목 크기 조정 */
+  }
+}

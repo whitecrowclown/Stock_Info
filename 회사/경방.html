@@ -4,129 +4,198 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>경방</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>주식회사 경방 사업 보고서</h1>
+    <header>
+      <h1>주식회사 경방 사업 보고서</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="#energy">에너지</a>
+              <a href="#materials">원자재</a>
+              <a href="#industrials">산업재</a>
+              <a href="#consumer_discretionary">소비재</a>
+              <a href="#consumer_staples">필수 소비재</a>
+              <a href="#healthcare">건강관리</a>
+              <a href="#financials">금융</a>
+              <a href="#information_technology">정보 기술</a>
+              <a href="#communication_services">통신 서비스</a>
+              <a href="#utilities">유틸리티</a>
+              <a href="#real_estate">부동산</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>1. 기본 정보</h2>
-    <ul>
-      <li><strong>회사명</strong>: 주식회사 경방</li>
-      <li><strong>상장 코드</strong>: 000050</li>
-      <li><strong>상장 시장</strong>: KOSPI</li>
-      <li><strong>GICS</strong>: 소재</li>
-      <li><strong>본사 주소</strong>: 서울특별시 영등포구 영중로 15</li>
-      <li><strong>대표이사</strong>: 김 담</li>
-    </ul>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#info">기본 정보</a></li>
+            <li><a href="#company_overview">회사 개요</a></li>
+            <li><a href="#performance">영업 실적</a></li>
+            <li><a href="#business_units">사업 부문</a></li>
+            <li><a href="#products">주요 제품 및 매출</a></li>
+            <li><a href="#materials">원재료 및 생산설비</a></li>
+            <li><a href="#research">연구 개발</a></li>
+            <li><a href="#market_conditions">시장 상황</a></li>
+            <li><a href="#competition">경쟁 요소</a></li>
+            <li><a href="#finance">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <h2>2. 회사의 개요</h2>
-    <p>
-      주식회사 경방은 섬유사업부와 부동산개발사업부로 구성되어 있으며, 섬유
-      제조는 베트남 빈증에서 운영 중입니다. 부동산 사업으로는 타임스퀘어와 호텔,
-      백화점 등을 운영합니다.
-    </p>
+      <main>
+        <h2 id="info">1. 기본 정보</h2>
+        <ul>
+          <li><strong>회사명</strong>: 주식회사 경방</li>
+          <li><strong>상장 코드</strong>: 000050</li>
+          <li><strong>상장 시장</strong>: KOSPI</li>
+          <li><strong>GICS</strong>: 소재</li>
+          <li><strong>본사 주소</strong>: 서울특별시 영등포구 영중로 15</li>
+          <li><strong>대표이사</strong>: 김 담</li>
+        </ul>
 
-    <h2>3. 영업 실적</h2>
-    <ul>
-      <li><strong>2023년 총 매출</strong>: 393,518,959천원</li>
-      <li><strong>2023년 영업손익</strong>: 15,968,826천원</li>
-      <li>
-        <strong>주요 사업부문</strong>: 섬유사업부, 복합쇼핑몰사업부, 기타사업부
-      </li>
-    </ul>
+        <h2 id="company_overview">2. 회사의 개요</h2>
+        <p>
+          주식회사 경방은 섬유사업부와 부동산개발사업부로 구성되어 있으며, 섬유
+          제조는 베트남 빈증에서 운영 중입니다. 부동산 사업으로는 타임스퀘어와
+          호텔, 백화점 등을 운영합니다.
+        </p>
 
-    <h2>4. 사업 부문</h2>
-    <ol>
-      <li>
-        <strong>섬유사업부</strong>: 방적 및 사염을 포함한 원사 제조, 생산능력은
-        월 3,125톤(방적), 450톤(사염).
-      </li>
-      <li>
-        <strong>부동산개발사업부</strong>: 타임스퀘어, 호텔, 백화점 운영 및
-        임대사업.
-      </li>
-      <li><strong>기타사업부</strong>: JEDI를 통한 부동산 컨설팅.</li>
-    </ol>
+        <h2 id="performance">3. 영업 실적</h2>
+        <ul>
+          <li><strong>2023년 총 매출</strong>: 393,518,959천원</li>
+          <li><strong>2023년 영업손익</strong>: 15,968,826천원</li>
+          <li>
+            <strong>주요 사업부문</strong>: 섬유사업부, 복합쇼핑몰사업부,
+            기타사업부
+          </li>
+        </ul>
 
-    <h2>5. 주요 제품 및 매출</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>사업부문</th>
-          <th>주요 제품/서비스</th>
-          <th>매출액 (단위: 백만원)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>섬유사업부</td>
-          <td>사류, 포류</td>
-          <td>154,455</td>
-        </tr>
-        <tr>
-          <td>복합쇼핑몰사업부</td>
-          <td>임대사업, 복합쇼핑몰</td>
-          <td>166,247</td>
-        </tr>
-        <tr>
-          <td>기타사업부</td>
-          <td>컨설팅</td>
-          <td>783</td>
-        </tr>
-      </tbody>
-    </table>
+        <h2 id="business_units">4. 사업 부문</h2>
+        <ol>
+          <li>
+            <strong>섬유사업부</strong>: 방적 및 사염을 포함한 원사 제조,
+            생산능력은 월 3,125톤(방적), 450톤(사염).
+          </li>
+          <li>
+            <strong>부동산개발사업부</strong>: 타임스퀘어, 호텔, 백화점 운영 및
+            임대사업.
+          </li>
+          <li><strong>기타사업부</strong>: JEDI를 통한 부동산 컨설팅.</li>
+        </ol>
 
-    <h2>6. 원재료 및 생산설비</h2>
-    <h3>주요 원재료</h3>
-    <ul>
-      <li><strong>원면</strong>: 실방적용 (미국, 호주, 브라질에서 수입)</li>
-      <li><strong>2023년 원면 가격</strong>: 평균 110￠/LB</li>
-    </ul>
+        <h2 id="products">5. 주요 제품 및 매출</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>사업부문</th>
+              <th>주요 제품/서비스</th>
+              <th>매출액 (단위: 백만원)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>섬유사업부</td>
+              <td>사류, 포류</td>
+              <td>154,455</td>
+            </tr>
+            <tr>
+              <td>복합쇼핑몰사업부</td>
+              <td>임대사업, 복합쇼핑몰</td>
+              <td>166,247</td>
+            </tr>
+            <tr>
+              <td>기타사업부</td>
+              <td>컨설팅</td>
+              <td>783</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <h3>생산능력 및 실적</h3>
-    <ul>
-      <li><strong>생산능력 (2023년)</strong>: 방적 43,020톤, 사염 5,400톤</li>
-      <li><strong>생산실적 (2023년)</strong>: 방적 33,820톤, 사염 3,753톤</li>
-      <li><strong>가동율</strong>: 92.4%</li>
-    </ul>
+        <h2 id="materials">6. 원재료 및 생산설비</h2>
+        <h3>주요 원재료</h3>
+        <ul>
+          <li><strong>원면</strong>: 실방적용 (미국, 호주, 브라질에서 수입)</li>
+          <li><strong>2023년 원면 가격</strong>: 평균 110￠/LB</li>
+        </ul>
 
-    <h2>7. 연구 개발</h2>
-    <p>2023년 기준 연구 개발 활동은 <strong>해당사항 없음</strong>.</p>
+        <h3>생산능력 및 실적</h3>
+        <ul>
+          <li>
+            <strong>생산능력 (2023년)</strong>: 방적 43,020톤, 사염 5,400톤
+          </li>
+          <li>
+            <strong>생산실적 (2023년)</strong>: 방적 33,820톤, 사염 3,753톤
+          </li>
+          <li><strong>가동율</strong>: 92.4%</li>
+        </ul>
 
-    <h2>8. 시장 상황</h2>
-    <h3>섬유사업부문</h3>
-    <p>
-      글로벌 섬유산업은 원면 수입 의존도가 높고, 환율 및 원면 가격 변동에
-      민감합니다. 또한 친환경 섬유 및 재활용 섬유에 대한 수요가 증가하고
-      있습니다.
-    </p>
+        <h2 id="research">7. 연구 개발</h2>
+        <p>2023년 기준 연구 개발 활동은 <strong>해당사항 없음</strong>.</p>
 
-    <h3>부동산개발사업부문</h3>
-    <p>
-      내수산업으로, 경기 변동과 밀접한 관계를 가지며, 소비 심리 및 부동산 시장의
-      상황에 영향을 받습니다.
-    </p>
+        <h2 id="market_conditions">8. 시장 상황</h2>
+        <h3>섬유사업부문</h3>
+        <p>
+          글로벌 섬유산업은 원면 수입 의존도가 높고, 환율 및 원면 가격 변동에
+          민감합니다. 또한 친환경 섬유 및 재활용 섬유에 대한 수요가 증가하고
+          있습니다.
+        </p>
 
-    <h2>9. 경쟁 요소</h2>
-    <h3>섬유사업부</h3>
-    <p>
-      경방은 고부가가치 제품 개발 및 친환경 제품을 통해 경쟁력을 강화하고
-      있습니다.
-    </p>
+        <h3>부동산개발사업부문</h3>
+        <p>
+          내수산업으로, 경기 변동과 밀접한 관계를 가지며, 소비 심리 및 부동산
+          시장의 상황에 영향을 받습니다.
+        </p>
 
-    <h3>부동산개발사업부</h3>
-    <p>
-      타임스퀘어와 같은 대형 쇼핑몰 운영으로 경쟁력을 확보하며, 리뉴얼을 통한
-      경쟁력 제고 및 고객 유치 전략을 시행 중입니다.
-    </p>
+        <h2 id="competition">9. 경쟁 요소</h2>
+        <h3>섬유사업부</h3>
+        <p>
+          경방은 고부가가치 제품 개발 및 친환경 제품을 통해 경쟁력을 강화하고
+          있습니다.
+        </p>
 
-    <h2>10. 재무 현황</h2>
-    <ul>
-      <li><strong>2023년 총 자산</strong>: 894,434,025천원</li>
-      <li><strong>부채총계</strong>: 134,568,399천원</li>
-      <li><strong>순이익</strong>: -134억원 (2023년 기준)</li>
-    </ul>
+        <h3>부동산개발사업부</h3>
+        <p>
+          타임스퀘어와 같은 대형 쇼핑몰 운영으로 경쟁력을 확보하며, 리뉴얼을
+          통한 경쟁력 제고 및 고객 유치 전략을 시행 중입니다.
+        </p>
+
+        <h2 id="finance">10. 재무 현황</h2>
+        <ul>
+          <li><strong>2023년 총 자산</strong>: 894,434,025천원</li>
+          <li><strong>부채총계</strong>: 134,568,399천원</li>
+          <li><strong>순이익</strong>: -134억원 (2023년 기준)</li>
+        </ul>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="https://talk.kakao.com/" target="_blank"
+          ><i class="fab fa-kakao"></i> 카카오톡</a
+        >
+        <a href="https://www.google.com/" target="_blank"
+          ><i class="fab fa-google"></i> 구글</a
+        >
+        <a href="https://www.naver.com/" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
-  <footer>
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-  </footer>
 </html>

@@ -4,89 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>광주신세계 사업 보고서 요약</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>광주신세계 사업 보고서 요약</h1>
+    <header>
+      <h1>광주신세계 사업 보고서 요약</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>1. 기본 정보</h2>
-    <p><strong>회사명:</strong> (주)광주신세계</p>
-    <p><strong>상장 코드:</strong> 037710</p>
-    <p><strong>상장 시장:</strong> KOSPI</p>
-    <p><strong>GICS:</strong> 경기소비재</p>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#business-performance">영업 실적</a></li>
+            <li><a href="#business-segments">사업 부문</a></li>
+            <li><a href="#main-products">주요 제품 및 매출</a></li>
+            <li>
+              <a href="#raw-materials-and-production">원재료 및 생산설비</a>
+            </li>
+            <li><a href="#r&d">연구 개발</a></li>
+            <li><a href="#market-status">시장 상황</a></li>
+            <li><a href="#competitive-factors">경쟁 요소</a></li>
+            <li><a href="#financial-status">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <h2>2. 사업 개요</h2>
-    <p>
-      광주신세계는 백화점 운영을 주된 사업으로 하며, 광주 및 호남지역을 주요
-      상권으로 하고 있습니다. 식품, 의류, 잡화 등을 주요 품목으로 판매하고
-      있습니다.
-    </p>
+      <main>
+        <h2 id="basic-info">1. 기본 정보</h2>
+        <ul>
+          <li><strong>회사명:</strong> (주)광주신세계</li>
+          <li><strong>상장 코드:</strong> 037710</li>
+          <li><strong>상장 시장:</strong> KOSPI</li>
+          <li><strong>GICS:</strong> 경기소비재</li>
+        </ul>
 
-    <h2>3. 영업 실적</h2>
-    <p>
-      2023년 매출액은 1,796억 원으로 전년 대비 2.9% 감소하였으며, 영업이익은
-      549억 원으로 16.3% 감소했습니다. 시장점유율은 광주광역시 내에서 50.3%를
-      기록하였습니다.
-    </p>
+        <h2 id="business-overview">2. 사업 개요</h2>
+        <p>
+          광주신세계는 백화점 운영을 주된 사업으로 하며, 광주 및 호남지역을 주요
+          상권으로 하고 있습니다. 식품, 의류, 잡화 등을 주요 품목으로 판매하고
+          있습니다.
+        </p>
 
-    <h2>4. 사업 부문</h2>
-    <p>
-      백화점 사업은 의류, 식품, 잡화 등 다양한 제품을 제공하고 있으며,
-      2024년에는 매장 리뉴얼 및 새로운 브랜드 도입을 통해 지속적인 성장을
-      계획하고 있습니다.
-    </p>
+        <h2 id="business-performance">3. 영업 실적</h2>
+        <p>
+          2023년 매출액은 1,796억 원으로 전년 대비 2.9% 감소하였으며, 영업이익은
+          549억 원으로 16.3% 감소했습니다. 시장점유율은 광주광역시 내에서
+          50.3%를 기록하였습니다.
+        </p>
 
-    <h2>5. 주요 제품 및 매출</h2>
-    <p>
-      주요 제품은 식품, 의류, 잡화 등이 있으며, 2023년 백화점 매출은 총
-      179,587백만 원이었고, 이 중 상품매출이 71.9%, 기타매출이 28.1%를
-      차지했습니다.
-    </p>
+        <h2 id="business-segments">4. 사업 부문</h2>
+        <p>
+          백화점 사업은 의류, 식품, 잡화 등 다양한 제품을 제공하고 있으며,
+          2024년에는 매장 리뉴얼 및 새로운 브랜드 도입을 통해 지속적인 성장을
+          계획하고 있습니다.
+        </p>
 
-    <h2>6. 원재료 및 생산설비</h2>
-    <p>
-      주요 영업 설비는 백화점 건물 및 관련 시설로, 이마트 부지 일부는 임대
-      중입니다.
-    </p>
+        <h2 id="main-products">5. 주요 제품 및 매출</h2>
+        <p>
+          주요 제품은 식품, 의류, 잡화 등이 있으며, 2023년 백화점 매출은 총
+          179,587백만 원이었고, 이 중 상품매출이 71.9%, 기타매출이 28.1%를
+          차지했습니다.
+        </p>
 
-    <h2>7. 연구 개발</h2>
-    <p>
-      현재 진행 중인 연구 개발 활동은 없으며, 백화점 업종 특성상 R&D 활동은
-      제한적입니다.
-    </p>
+        <h2 id="raw-materials-and-production">6. 원재료 및 생산설비</h2>
+        <p>
+          주요 영업 설비는 백화점 건물 및 관련 시설로, 이마트 부지 일부는 임대
+          중입니다.
+        </p>
 
-    <h2>8. 시장 상황</h2>
-    <p>
-      국내 백화점 시장은 경기 침체와 소비심리 위축으로 매출이 감소하는
-      추세입니다. 하지만 고객 맞춤형 전략을 통해 백화점 업계에서 지속적인 입지를
-      확보하고 있습니다.
-    </p>
+        <h2 id="r&d">7. 연구 개발</h2>
+        <p>
+          현재 진행 중인 연구 개발 활동은 없으며, 백화점 업종 특성상 R&D 활동은
+          제한적입니다.
+        </p>
 
-    <h2>9. 경쟁 요소</h2>
-    <p>
-      주요 경쟁 요소는 타 백화점 및 온라인 쇼핑몰과의 가격 경쟁, 서비스 품질,
-      트렌드 반영 속도입니다. 지역 내 소비심리 위축에도 불구하고 차별화된 브랜드
-      전략을 통해 경쟁 우위를 유지하고 있습니다.
-    </p>
+        <h2 id="market-status">8. 시장 상황</h2>
+        <p>
+          국내 백화점 시장은 경기 침체와 소비심리 위축으로 매출이 감소하는
+          추세입니다. 하지만 고객 맞춤형 전략을 통해 백화점 업계에서 지속적인
+          입지를 확보하고 있습니다.
+        </p>
 
-    <h2>10. 재무 현황</h2>
-    <p>
-      2023년 말 기준 자산총액은 약 1,692억 원, 부채총액은 약 835억 원,
-      자본총액은 약 857억 원입니다.
-    </p>
-  </body>
+        <h2 id="competitive-factors">9. 경쟁 요소</h2>
+        <p>
+          주요 경쟁 요소는 타 백화점 및 온라인 쇼핑몰과의 가격 경쟁, 서비스
+          품질, 트렌드 반영 속도입니다. 지역 내 소비심리 위축에도 불구하고
+          차별화된 브랜드 전략을 통해 경쟁 우위를 유지하고 있습니다.
+        </p>
 
-  <footer id="footer">
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-    <div>
-      <a href="mailto:ssmman0121@gmail.com" target="_blank"
-        ><i class="fab fa-google"></i> 구글 메일</a
-      >
-      <a href="mailto:naver0460@naver.com" target="_blank"
-        ><i class="fab fa-naver"></i> 네이버 메일</a
-      >
-      <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
-        ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
-      >
+        <h2 id="financial-status">10. 재무 현황</h2>
+        <p>
+          2023년 말 기준 자산총액은 약 1,692억 원, 부채총액은 약 835억 원,
+          자본총액은 약 857억 원입니다.
+        </p>
+      </main>
     </div>
-  </footer>
+
+    <footer>
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="mailto:ssmman0121@gmail.com" target="_blank"
+          ><i class="fab fa-google"></i> 구글</a
+        >
+        <a href="mailto:naver0460@naver.com" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버</a
+        >
+        <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
+          ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

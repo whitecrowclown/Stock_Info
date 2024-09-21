@@ -3,95 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>교촌에프앤비 사업 보고서</title>
+    <title>교촌에프앤비 사업 보고서 요약</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>교촌에프앤비 주식회사 사업 보고서</h1>
+    <header>
+      <h1>교촌에프앤비 주식회사 사업 보고서</h1>
+      <p>
+        <strong>상장 코드:</strong> 339770 | <strong>상장 시장:</strong> KOSPI
+      </p>
+      <p><strong>GICS:</strong> 경기소비재</p>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>1. 기본 정보</h2>
-    <p><strong>회사명:</strong> 교촌에프앤비 주식회사</p>
-    <p><strong>상장 코드:</strong> 339770</p>
-    <p><strong>상장 시장:</strong> KOSPI</p>
-    <p><strong>GICS:</strong> 경기소비재</p>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#business-performance">영업 실적</a></li>
+            <li><a href="#business-segments">사업 부문</a></li>
+            <li><a href="#main-products">주요 제품 및 매출</a></li>
+            <li>
+              <a href="#raw-materials-and-production">원재료 및 생산설비</a>
+            </li>
+            <li><a href="#r&d">연구 개발</a></li>
+            <li><a href="#market-status">시장 상황</a></li>
+            <li><a href="#competitive-factors">경쟁 요소</a></li>
+            <li><a href="#financial-status">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <h2>2. 사업 개요</h2>
-    <p>
-      교촌에프앤비는 1991년 경북 구미에서 시작된 교촌치킨 브랜드로, 치킨
-      프랜차이즈 유통업 및 외식사업을 영위하고 있습니다. 본사는 경상북도 칠곡군
-      가산면에 위치하며, 2020년 11월 유가증권시장에 상장되었습니다. 글로벌
-      사업으로는 미국과 중국에 직영 매장을 운영하며, 동남아시아, 중동, 북미
-      등에도 마스터 프랜차이즈 형태로 진출해 있습니다.
-    </p>
+      <main>
+        <section id="basic-info">
+          <h2>1. 기본 정보</h2>
+          <p><strong>회사명:</strong> 교촌에프앤비 주식회사</p>
+          <p><strong>상장 코드:</strong> 339770</p>
+          <p><strong>상장 시장:</strong> KOSPI</p>
+          <p><strong>GICS:</strong> 경기소비재</p>
+        </section>
 
-    <h2>3. 영업 실적</h2>
-    <p><strong>2023년 매출액:</strong> 2,643,471천원</p>
-    <p>
-      교촌에프앤비는 지속적인 매출 성장을 이루었으며, 주요 수익은 프랜차이즈
-      사업에서 발생합니다.
-    </p>
+        <section id="business-overview">
+          <h2>2. 사업 개요</h2>
+          <p>
+            교촌에프앤비는 1991년 경북 구미에서 시작된 교촌치킨 브랜드로, 치킨
+            프랜차이즈 유통업 및 외식사업을 영위하고 있습니다. 본사는 경상북도
+            칠곡군 가산면에 위치하며, 2020년 11월 유가증권시장에 상장되었습니다.
+            글로벌 사업으로는 미국과 중국에 직영 매장을 운영하며, 동남아시아,
+            중동, 북미 등에도 마스터 프랜차이즈 형태로 진출해 있습니다.
+          </p>
+        </section>
 
-    <h2>4. 사업 부문</h2>
-    <p>
-      교촌에프앤비의 사업 부문은 치킨 프랜차이즈와 외식업으로 구성되며, 국내외
-      다양한 가맹점을 통해 매출을 창출하고 있습니다.
-    </p>
+        <section id="financial-performance">
+          <h2>3. 영업 실적</h2>
+          <p><strong>2023년 매출액:</strong> 2,643,471천 원</p>
+          <p>
+            교촌에프앤비는 지속적인 매출 성장을 이루었으며, 주요 수익은
+            프랜차이즈 사업에서 발생합니다.
+          </p>
+        </section>
 
-    <h2>5. 주요 제품 및 매출</h2>
-    <p><strong>주요 제품:</strong> 교촌치킨</p>
-    <p>
-      <strong>매출 비중:</strong> 교촌치킨 프랜차이즈 사업을 중심으로 매출의
-      대부분을 차지합니다.
-    </p>
+        <section id="business-divisions">
+          <h2>4. 사업 부문</h2>
+          <p>
+            교촌에프앤비의 사업 부문은 치킨 프랜차이즈와 외식업으로 구성되며,
+            국내외 다양한 가맹점을 통해 매출을 창출하고 있습니다.
+          </p>
+        </section>
 
-    <h2>6. 원재료 및 생산설비</h2>
-    <p>
-      교촌에프앤비는 주요 원재료로 계육을 사용하며, 자체 공장에서 소스, 패키지
-      등 부자재를 생산하여 가맹점에 공급합니다.
-    </p>
+        <section id="key-products">
+          <h2>5. 주요 제품 및 매출</h2>
+          <p><strong>주요 제품:</strong> 교촌치킨</p>
+          <p>
+            <strong>매출 비중:</strong> 교촌치킨 프랜차이즈 사업을 중심으로
+            매출의 대부분을 차지합니다.
+          </p>
+        </section>
 
-    <h2>7. 연구 개발</h2>
-    <p>
-      신성장 동력 확보를 위해 교촌에프앤비는 지속적으로 메뉴 및 제품 개발을 진행
-      중입니다. 특히 글로벌 시장에서의 성장을 목표로 다양한 R&D 활동을 강화하고
-      있습니다.
-    </p>
+        <section id="materials-equipment">
+          <h2>6. 원재료 및 생산설비</h2>
+          <p>
+            교촌에프앤비는 주요 원재료로 계육을 사용하며, 자체 공장에서 소스,
+            패키지 등 부자재를 생산하여 가맹점에 공급합니다.
+          </p>
+        </section>
 
-    <h2>8. 시장 상황</h2>
-    <p>
-      국내 치킨 프랜차이즈 시장에서 교촌에프앤비는 시장점유율을 크게 차지하고
-      있으며, 고품질 서비스와 제품으로 경쟁력을 강화하고 있습니다. 해외 진출도
-      활발하게 이루어지고 있습니다.
-    </p>
+        <section id="r-d">
+          <h2>7. 연구 개발</h2>
+          <p>
+            신성장 동력 확보를 위해 교촌에프앤비는 지속적으로 메뉴 및 제품
+            개발을 진행 중입니다. 특히 글로벌 시장에서의 성장을 목표로 다양한
+            R&D 활동을 강화하고 있습니다.
+          </p>
+        </section>
 
-    <h2>9. 경쟁 요소</h2>
-    <p>
-      교촌에프앤비는 고품질의 제품과 고객 중심의 서비스로 국내외 시장에서
-      경쟁력을 유지하고 있습니다. 경쟁사의 증가에도 불구하고 차별화된 브랜드
-      이미지와 글로벌 사업 확장이 강점입니다.
-    </p>
+        <section id="market-situation">
+          <h2>8. 시장 상황</h2>
+          <p>
+            국내 치킨 프랜차이즈 시장에서 교촌에프앤비는 시장점유율을 크게
+            차지하고 있으며, 고품질 서비스와 제품으로 경쟁력을 강화하고
+            있습니다. 해외 진출도 활발하게 이루어지고 있습니다.
+          </p>
+        </section>
 
-    <h2>10. 재무 현황</h2>
-    <p><strong>자산:</strong> 51,750,543천원</p>
-    <p><strong>부채:</strong> 15,567,751천원</p>
-    <p><strong>순이익:</strong> 15,787,082천원</p>
-    <p>
-      교촌에프앤비는 안정적인 자산 구조를 유지하고 있으며, 매출 증가와 함께 재무
-      건전성도 향상되고 있습니다.
-    </p>
-  </body>
+        <section id="competitive-elements">
+          <h2>9. 경쟁 요소</h2>
+          <p>
+            교촌에프앤비는 고품질의 제품과 고객 중심의 서비스로 국내외 시장에서
+            경쟁력을 유지하고 있습니다. 경쟁사의 증가에도 불구하고 차별화된
+            브랜드 이미지와 글로벌 사업 확장이 강점입니다.
+          </p>
+        </section>
 
-  <footer id="footer">
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-    <div>
-      <a href="mailto:ssmman0121@gmail.com" target="_blank"
-        ><i class="fab fa-google"></i> 구글 메일</a
-      >
-      <a href="mailto:naver0460@naver.com" target="_blank"
-        ><i class="fab fa-naver"></i> 네이버 메일</a
-      >
-      <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
-        ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
-      >
+        <section id="financial-status">
+          <h2>10. 재무 현황</h2>
+          <p><strong>자산:</strong> 51,750,543천 원</p>
+          <p><strong>부채:</strong> 15,567,751천 원</p>
+          <p><strong>순이익:</strong> 15,787,082천 원</p>
+          <p>
+            교촌에프앤비는 안정적인 자산 구조를 유지하고 있으며, 매출 증가와
+            함께 재무 건전성도 향상되고 있습니다.
+          </p>
+        </section>
+      </main>
     </div>
-  </footer>
+
+    <footer>
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="mailto:ssmman0121@gmail.com" target="_blank"
+          ><i class="fab fa-google"></i> 구글 메일</a
+        >
+        <a href="mailto:naver0460@naver.com" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버 메일</a
+        >
+        <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
+          ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

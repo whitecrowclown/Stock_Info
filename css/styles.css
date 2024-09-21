@@ -1,0 +1,233 @@
+/* 전체 스타일 설정 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* 맑은 하늘 느낌 */
+  color: #343a40; /* 기본 텍스트 색상 */
+  line-height: 1.6;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 네비게이션 스타일 */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+/* 레이아웃 설정 */
+.wrapper {
+  display: flex; /* aside와 main을 감싸는 div에 flex 추가 */
+  width: 100%;
+}
+
+aside {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh; /* 스크롤 시에도 스티키 적용 */
+  overflow-y: auto;
+}
+
+aside nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside nav ul li {
+  margin-bottom: 10px;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+aside nav ul li a:hover {
+  color: #343a40;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+  flex-grow: 1;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #007bff;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f8f9fa;
+}
+
+table td {
+  text-align: center;
+}
+
+/* 푸터 스타일 */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* SNS 아이콘 */
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #ffc107;
+}
+
+/* 반응형 스타일 */
+
+/* 스마트폰 스타일 */
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 태블릿 스타일 */
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}

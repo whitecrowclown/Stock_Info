@@ -35,7 +35,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: white;
+  color: skyblue;
   text-decoration: none;
   font-weight: bold;
 }
@@ -50,6 +50,7 @@ header nav ul li a:hover {
 }
 
 .dropdown-content {
+  color: black;
   display: none;
   position: absolute;
   background-color: white;
@@ -59,7 +60,6 @@ header nav ul li a:hover {
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -75,7 +75,7 @@ header nav ul li a:hover {
 
 /* 레이아웃 설정 */
 .wrapper {
-  display: flex; /* aside와 main을 감싸는 div에 flex 추가 */
+  display: flex;
   width: 100%;
 }
 
@@ -201,32 +201,53 @@ footer .social-icons a:hover {
 }
 
 .card {
-  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
+  flex: 1 1 calc(30% - 20px); /* 3개 카드 정렬 */
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-decoration: none; /* 링크에 밑줄 제거 */
-  color: inherit; /* 텍스트 색상 유지 */
+  padding: 20px; /* 통일된 카드 패딩 */
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.3s;
+  position: relative;
+  height: auto; /* 카드 높이를 자동으로 설정 */
 }
 
 .card:hover {
   transform: scale(1.02);
 }
 
-h3 {
-  margin: 0 0 10px;
+/* 제목, 링크, 본문 비율 */
+.title {
+  flex: 0 0 20%; /* 제목 높이 비율 */
 }
 
-p {
-  margin: 0;
-  color: #555;
+.link {
+  flex: 0 0 30%; /* 하이퍼링크 높이 비율 */
 }
 
-/* 방문한 링크의 색상 변경 방지 */
-a:visited {
-  color: inherit; /* 방문한 링크 색상 유지 */
+.content {
+  flex: 0 0 50%; /* 본문 높이 비율 */
+}
+
+/* 버튼 스타일 */
+.detail-button {
+  display: block; /* 블록 요소로 설정하여 너비 조정 가능 */
+  width: 70%; /* 버튼 너비를 70%로 설정 */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; /* 텍스트 가운데 정렬 */
+  margin: 20px auto 0; /* 상단 여백과 자동으로 좌우 여백을 주어 가운데 정렬 */
+}
+
+.detail-button:hover {
+  background-color: #0056b3;
 }
 
 /* 반응형 스타일 */

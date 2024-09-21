@@ -3,117 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>사업 보고서 요약</title>
+    <title>고려산업 사업 보고서 요약</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- 1. 기본 정보 -->
-    <section id="basic-info">
-      <h2>기본 정보</h2>
-      <p>회사명: 고려산업</p>
-      <p>상장 코드: 002140</p>
-      <p>상장 시장: KOSPI</p>
-      <p>GICS 산업 분류: 소재</p>
-    </section>
+    <header>
+      <h1>고려산업 주식회사 사업보고서 요약</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- 2. 사업 개요 -->
-    <section id="business-overview">
-      <h2>사업 개요</h2>
-      <p>
-        고려산업은 가축용 배합사료 제조 및 판매를 주업종으로 하며, 부동산
-        임대업, 농산물 수탁판매, 축산업 등을 영위하고 있습니다. 사료 부문이 전체
-        매출의 96%를 차지하고 있으며, 기타 사업부문이 나머지를 담당하고
-        있습니다.
-      </p>
-    </section>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#business-performance">영업 실적</a></li>
+            <li><a href="#business-segments">사업 부문</a></li>
+            <li><a href="#main-products">주요 제품 및 매출</a></li>
+            <li>
+              <a href="#raw-materials-and-production">원재료 및 생산설비</a>
+            </li>
+            <li><a href="#r&d">연구 개발</a></li>
+            <li><a href="#market-status">시장 상황</a></li>
+            <li><a href="#competitive-factors">경쟁 요소</a></li>
+            <li><a href="#financial-status">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <!-- 3. 영업 실적 -->
-    <section id="business-performance">
-      <h2>영업 실적</h2>
-      <p>2023년 매출액: 3,190억 원</p>
-      <p>2023년 영업이익: 79.9억 원</p>
-      <p>전년대비 매출 증가율: 14.6%</p>
-    </section>
+      <main>
+        <h2 id="basic-info">1. 기본 정보</h2>
+        <ul>
+          <li><strong>회사명:</strong> 고려산업 주식회사</li>
+          <li><strong>상장 코드:</strong> 002140</li>
+          <li><strong>상장 시장:</strong> KOSPI</li>
+          <li><strong>GICS 산업 분류:</strong> 소재</li>
+        </ul>
 
-    <!-- 4. 사업 부문 -->
-    <section id="business-segments">
-      <h2>사업 부문</h2>
-      <p>
-        고려산업은 배합사료를 포함한 사료사업과 농산물, 축산물 유통, 부동산 임대
-        사업을 운영하고 있습니다. 사료부문이 매출의 96%를 차지하며, 축산물 유통
-        및 기타 부문이 나머지 4%를 구성합니다.
-      </p>
-    </section>
+        <h2 id="business-overview">2. 사업 개요</h2>
+        <p>
+          고려산업은 가축용 배합사료 제조 및 판매를 주업종으로 하며, 부동산
+          임대업, 농산물 수탁판매, 축산업 등을 영위하고 있습니다. 사료 부문이
+          전체 매출의 96%를 차지하고 있으며, 기타 사업부문이 나머지를 담당하고
+          있습니다.
+        </p>
 
-    <!-- 5. 주요 제품 및 매출 -->
-    <section id="main-products">
-      <h2>주요 제품 및 매출</h2>
-      <ul>
-        <li>사료 (양돈사료, 축우사료, 양계사료)</li>
-        <li>기타 (농산물 수탁판매, 식육사업)</li>
-      </ul>
-      <p>사료 부문 매출: 3,051억 원 (2023년 기준)</p>
-    </section>
+        <h2 id="business-performance">3. 영업 실적</h2>
+        <ul>
+          <li><strong>2023년 매출액:</strong> 3,190억 원</li>
+          <li><strong>2023년 영업이익:</strong> 79.9억 원</li>
+          <li><strong>전년대비 매출 증가율:</strong> 14.6%</li>
+        </ul>
 
-    <!-- 6. 원재료 및 생산설비 -->
-    <section id="raw-materials-and-production">
-      <h2>원재료 및 생산설비</h2>
-      <p>
-        고려산업은 옥수수, 대두박 등 주요 원재료를 남미 및 유럽에서 수입하고
-        있습니다. 주요 생산공장은 대구와 창녕에 위치해 있으며, 사료의 생산능력은
-        연간 94만 6,500톤입니다.
-      </p>
-    </section>
+        <h2 id="business-segments">4. 사업 부문</h2>
+        <p>
+          고려산업은 배합사료를 포함한 사료사업과 농산물, 축산물 유통, 부동산
+          임대 사업을 운영하고 있습니다. 사료부문이 매출의 96%를 차지하며,
+          축산물 유통 및 기타 부문이 나머지 4%를 구성합니다.
+        </p>
 
-    <!-- 7. 연구 개발 -->
-    <section id="r&d">
-      <h2>연구 개발</h2>
-      <p>
-        고려산업은 축산업 관련 기술 향상을 위해 사료의 품질 개선과 과학적
-        사양관리 시스템을 개발하고 있습니다. 또한 다양한 사료의 영양 개선을 통해
-        경쟁력을 확보하고 있습니다.
-      </p>
-    </section>
+        <h2 id="main-products">5. 주요 제품 및 매출</h2>
+        <ul>
+          <li>사료 (양돈사료, 축우사료, 양계사료)</li>
+          <li>기타 (농산물 수탁판매, 식육사업)</li>
+        </ul>
+        <p><strong>사료 부문 매출:</strong> 3,051억 원 (2023년 기준)</p>
 
-    <!-- 8. 시장 상황 -->
-    <section id="market-status">
-      <h2>시장 상황</h2>
-      <p>
-        사료 산업은 국제 곡물가 및 환율 변동에 따라 가격 변동성이 큽니다. 특히
-        러-우 전쟁과 미국의 고금리 기조로 인해 곡물 가격 상승 및 수급에 어려움을
-        겪고 있습니다.
-      </p>
-    </section>
+        <h2 id="raw-materials-and-production">6. 원재료 및 생산설비</h2>
+        <p>
+          고려산업은 옥수수, 대두박 등 주요 원재료를 남미 및 유럽에서 수입하고
+          있습니다. 주요 생산공장은 대구와 창녕에 위치해 있으며, 사료의
+          생산능력은 연간 94만 6,500톤입니다.
+        </p>
 
-    <!-- 9. 경쟁 요소 -->
-    <section id="competitive-factors">
-      <h2>경쟁 요소</h2>
-      <p>
-        고려산업은 품질 개선과 안정적인 유통망을 통해 사료산업에서의 경쟁력을
-        유지하고 있으며, 과학적 사양관리 지원을 통해 차별화된 경쟁 요소를 갖추고
-        있습니다.
-      </p>
-    </section>
+        <h2 id="r&d">7. 연구 개발</h2>
+        <p>
+          고려산업은 축산업 관련 기술 향상을 위해 사료의 품질 개선과 과학적
+          사양관리 시스템을 개발하고 있습니다. 또한 다양한 사료의 영양 개선을
+          통해 경쟁력을 확보하고 있습니다.
+        </p>
 
-    <!-- 10. 재무 현황 -->
-    <section id="financial-status">
-      <h2>재무 현황</h2>
-      <p>2023년 자산: 2,775억 원</p>
-      <p>2023년 부채: 1,709억 원</p>
-      <p>순이익: 20.6억 원</p>
-    </section>
-  </body>
-  <footer id="footer">
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-    <div>
-      <a href="mailto:ssmman0121@gmail.com" target="_blank"
-        ><i class="fab fa-google"></i> 구글 메일</a
-      >
-      <a href="mailto:naver0460@naver.com" target="_blank"
-        ><i class="fab fa-naver"></i> 네이버 메일</a
-      >
-      <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
-        ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
-      >
+        <h2 id="market-status">8. 시장 상황</h2>
+        <p>
+          사료 산업은 국제 곡물가 및 환율 변동에 따라 가격 변동성이 큽니다. 특히
+          러-우 전쟁과 미국의 고금리 기조로 인해 곡물 가격 상승 및 수급에
+          어려움을 겪고 있습니다.
+        </p>
+
+        <h2 id="competitive-factors">9. 경쟁 요소</h2>
+        <p>
+          고려산업은 품질 개선과 안정적인 유통망을 통해 사료산업에서의 경쟁력을
+          유지하고 있으며, 과학적 사양관리 지원을 통해 차별화된 경쟁 요소를
+          갖추고 있습니다.
+        </p>
+
+        <h2 id="financial-status">10. 재무 현황</h2>
+        <ul>
+          <li><strong>자산:</strong> 2,775억 원</li>
+          <li><strong>부채:</strong> 1,709억 원</li>
+          <li><strong>순이익:</strong> 20.6억 원</li>
+        </ul>
+      </main>
     </div>
-  </footer>
+
+    <footer>
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="https://talk.kakao.com/" target="_blank"
+          ><i class="fab fa-kakao"></i> 카카오톡</a
+        >
+        <a href="https://www.google.com/" target="_blank"
+          ><i class="fab fa-google"></i> 구글</a
+        >
+        <a href="https://www.naver.com/" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

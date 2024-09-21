@@ -3,127 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>경동나비엔 사업보고서</title>
+    <title>경동나비엔</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>경동나비엔 사업보고서</h1>
+    <header>
+      <h1>경동나비엔 기업 개요</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- 1. 기본 정보 -->
-    <section>
-      <h2>1. 기본 정보</h2>
-      <ul>
-        <li><strong>회사명:</strong> 경동나비엔</li>
-        <li><strong>상장 코드:</strong> 009450</li>
-        <li><strong>상장 시장:</strong> KOSPI</li>
-        <li><strong>GICS:</strong> 산업재</li>
-      </ul>
-    </section>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#info">기본 정보</a></li>
+            <li><a href="#business">사업 개요</a></li>
+            <li><a href="#performance">영업 실적</a></li>
+            <li><a href="#products">주요 제품</a></li>
+            <li><a href="#materials">원재료 및 생산설비</a></li>
+            <li><a href="#research">연구 개발</a></li>
+            <li><a href="#market">시장 상황</a></li>
+            <li><a href="#competition">경쟁 요소</a></li>
+            <li><a href="#finance">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <!-- 2. 사업 개요 -->
-    <section>
-      <h2>2. 사업 개요</h2>
-      <p>
-        경동나비엔은 가스보일러, 기름보일러, 가스온수기 및 온수매트를 제조 및
-        판매하는 회사로, 주로 기계류 및 열연소 기구를 생산하고 있습니다. 회사의
-        비전은 스마트한 헬스케어 브랜드로 자리 잡는 것이며, 시장 변화에 민첩하게
-        대응하면서 지속 가능한 성장 모델을 지향하고 있습니다.
-      </p>
-    </section>
+      <main>
+        <h2 id="info">1. 기본 정보</h2>
+        <ul>
+          <li>회사명: 경동나비엔</li>
+          <li>상장 코드: 009450</li>
+          <li>상장 시장: KOSPI</li>
+          <li>GICS: 산업재</li>
+        </ul>
 
-    <!-- 3. 영업 실적 -->
-    <section>
-      <h2>3. 영업 실적</h2>
-      <p>
-        2023년 기준 순매출액은 1,204,313백만원, 영업이익은 105,911백만원입니다.
-        전년 대비 영업이익이 증가했으며, 특히 보일러와 온수기 제품에서 매출
-        성장이 두드러졌습니다.
-      </p>
-    </section>
+        <h2 id="business">2. 사업 개요</h2>
+        <p>
+          경동나비엔은 가스보일러, 기름보일러, 가스온수기 및 온수매트를 제조 및
+          판매하는 회사로, 주로 기계류 및 열연소 기구를 생산하고 있습니다.
+          회사의 비전은 스마트한 헬스케어 브랜드로 자리 잡는 것이며, 시장 변화에
+          민첩하게 대응하면서 지속 가능한 성장 모델을 지향하고 있습니다.
+        </p>
 
-    <!-- 4. 사업 부문 -->
-    <section>
-      <h2>4. 사업 부문</h2>
-      <p>
-        경동나비엔의 사업 부문은 주로 보일러와 온수기 제조 판매입니다. 가정용
-        보일러와 온수기가 주요 제품이며, 각각 전체 매출의 43%를 차지하고
-        있습니다. 주요 판매 지역은 미국, 중국, 러시아입니다.
-      </p>
-    </section>
+        <h2 id="performance">3. 영업 실적</h2>
+        <ul>
+          <li><strong>경동나비엔 매출:</strong> 1,204,313백만원</li>
+          <li><strong>영업이익:</strong> 105,911백만원</li>
+        </ul>
 
-    <!-- 5. 주요 제품 및 매출 -->
-    <section>
-      <h2>5. 주요 제품 및 매출</h2>
-      <ul>
-        <li>가정용 보일러: 43%</li>
-        <li>온수기: 43%</li>
-        <li>기타 제품 및 상품: 13%</li>
-      </ul>
-      <p>주요 제품의 평균 가격은 제51기 기준 509,438원입니다.</p>
-    </section>
+        <h2 id="products">4. 사업 부문</h2>
+        <ul>
+          <li><strong>경동나비엔:</strong> 보일러, 온수기</li>
+        </ul>
 
-    <!-- 6. 원재료 및 생산설비 -->
-    <section>
-      <h2>6. 원재료 및 생산설비</h2>
-      <p>
-        경동나비엔은 주요 원재료로 철강 및 알루미늄을 사용하고 있으며, 주요
-        원재료의 가격 변동은 글로벌 시장 상황에 따라 변화하고 있습니다. 주요
-        생산 시설은 평택, 아산, 경주에 위치하고 있습니다.
-      </p>
-    </section>
+        <h2 id="products">5. 주요 제품 및 매출</h2>
+        <ul>
+          <li>
+            <strong>경동나비엔 주요 제품:</strong>
+          </li>
+          <ul>
+            <li>가정용 보일러: 43%</li>
+            <li>온수기: 43%</li>
+            <li>기타: 13%</li>
+          </ul>
+        </ul>
 
-    <!-- 7. 연구 개발 -->
-    <section>
-      <h2>7. 연구 개발</h2>
-      <p>
-        경동나비엔은 신재생에너지와 친환경 보일러 개발을 위해 연구개발(R&D)에
-        많은 투자를 하고 있으며, 연구소는 평택과 미국에 위치하고 있습니다.
-        2023년 연구개발비는 약 10,000백만원입니다.
-      </p>
-    </section>
+        <h2 id="materials">6. 원재료 및 생산설비</h2>
+        <ul>
+          <li><strong>원재료:</strong></li>
+          <ul>
+            <li>경동나비엔: 철강, 알루미늄</li>
+          </ul>
+          <li><strong>생산설비:</strong></li>
+          <ul>
+            <li>경동나비엔: 평택, 아산, 경주</li>
+          </ul>
+        </ul>
 
-    <!-- 8. 시장 상황 -->
-    <section>
-      <h2>8. 시장 상황</h2>
-      <p>
-        국내외 보일러 시장은 에너지 절감과 친환경 제품에 대한 수요가 증가하고
-        있습니다. 특히 미국과 중국에서 온수기의 수요가 크게 늘고 있으며, 러시아
-        시장에서는 보일러 수요가 지속되고 있습니다.
-      </p>
-    </section>
+        <h2 id="research">7. 연구 개발</h2>
+        <ul>
+          <li><strong>연구개발비:</strong> 10,000백만원</li>
+          <li>신재생에너지 보일러 개발</li>
+        </ul>
 
-    <!-- 9. 경쟁 요소 -->
-    <section>
-      <h2>9. 경쟁 요소</h2>
-      <p>
-        경동나비엔은 경쟁사들보다 앞선 기술력을 바탕으로 시장 점유율을 유지하고
-        있으며, 특히 친환경 에너지 절감형 보일러 제품에서 경쟁 우위를 점하고
-        있습니다. 주요 경쟁사는 국내외 보일러 제조업체들입니다.
-      </p>
-    </section>
+        <h2 id="market">8. 시장 상황</h2>
+        <p>
+          국내외 보일러 시장은 에너지 절감과 친환경 제품에 대한 수요가 증가하고
+          있습니다.
+        </p>
 
-    <!-- 10. 재무 현황 -->
-    <section>
-      <h2>10. 재무 현황</h2>
-      <ul>
-        <li><strong>자산 총계:</strong> 1,060,558백만원</li>
-        <li><strong>부채 총계:</strong> 15,629,466백만원</li>
-        <li><strong>순이익:</strong> 3,320백만원</li>
-      </ul>
-    </section>
-  </body>
+        <h2 id="competition">9. 경쟁 요소</h2>
+        <p>친환경 에너지 절감형 보일러 제품에서 경쟁 우위를 점하고 있습니다.</p>
 
-  <footer id="footer">
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-    <div>
-      <a href="mailto:ssmman0121@gmail.com" target="_blank"
-        ><i class="fab fa-google"></i> 구글 메일</a
-      >
-      <a href="mailto:naver0460@naver.com" target="_blank"
-        ><i class="fab fa-naver"></i> 네이버 메일</a
-      >
-      <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
-        ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
-      >
+        <h2 id="finance">10. 재무 현황</h2>
+        <p><strong>유형자산 총액:</strong> 1,060,558백만원</p>
+      </main>
     </div>
-  </footer>
+
+    <footer>
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="https://talk.kakao.com/" target="_blank"
+          ><i class="fab fa-kakao"></i> 카카오톡</a
+        >
+        <a href="https://www.google.com/" target="_blank"
+          ><i class="fab fa-google"></i> 구글</a
+        >
+        <a href="https://www.naver.com/" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

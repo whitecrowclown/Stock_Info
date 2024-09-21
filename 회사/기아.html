@@ -3,199 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>회사 보고서</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      h1,
-      h2,
-      h3 {
-        color: #333;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-      }
-      table,
-      th,
-      td {
-        border: 1px solid #000;
-      }
-      th,
-      td {
-        padding: 10px;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      .section {
-        margin-bottom: 40px;
-      }
-    </style>
+    <title>기아 - 사업 보고서 요약</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>회사 보고서</h1>
+    <header>
+      <h1>기아 - 사업 보고서 요약</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="section">
-      <h2>1. 기본 정보</h2>
-      <table>
-        <tr>
-          <th>회사명</th>
-          <td>기아 주식회사</td>
-        </tr>
-        <tr>
-          <th>상장 코드</th>
-          <td>000270</td>
-        </tr>
-        <tr>
-          <th>상장 시장</th>
-          <td>코스피</td>
-        </tr>
-        <tr>
-          <th>GICS</th>
-          <td>경기소비재</td>
-        </tr>
-      </table>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#performance">영업 실적</a></li>
+            <li><a href="#business-division">사업 부문</a></li>
+            <li><a href="#products">주요 제품 및 매출</a></li>
+            <li><a href="#raw-materials">원재료 및 생산설비</a></li>
+            <li><a href="#rnd">연구 개발</a></li>
+            <li><a href="#market">시장 상황</a></li>
+            <li><a href="#competition">경쟁 요소</a></li>
+            <li><a href="#financials">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <section>
+          <h2>1. 기본 정보</h2>
+          <p><strong>회사명:</strong> 기아 주식회사</p>
+          <p><strong>상장 코드:</strong> 000270</p>
+          <p><strong>상장 시장:</strong> KOSPI</p>
+          <p><strong>GICS 산업:</strong> 경기소비재</p>
+        </section>
+
+        <section>
+          <h2>2. 사업 개요</h2>
+          <p>
+            기아는 다양한 차량과 부품의 제조 및 판매를 주력 사업으로 운영하고
+            있습니다. 주요 제품으로는 완성차, 부품, 차량 정비 서비스 등이
+            있으며, 최근에는 금융상품 판매와 중고차 플랫폼을 통한 할부금융 중개
+            사업도 추가했습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. 영업 실적</h2>
+          <p>
+            2023년 기아의 매출액은 99조 8,084억 원, 영업이익은 11조 6,078억 원을
+            기록했으며, 전년도에 비해 영업이익률은 11.6%로 증가했습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. 사업 부문</h2>
+          <ul>
+            <li><strong>완성차 제조</strong>: 승용차, RV, 상용차</li>
+            <li><strong>주요 차종</strong>: 모닝, 스포티지, EV6</li>
+            <li><strong>해외 공장</strong>: 미국, 인도, 슬로바키아, 멕시코</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. 위험 관리 및 파생 거래</h2>
+          <p>
+            기아는 다양한 금융 상품을 운영하며, 금융 부채 및 자산 관리에서
+            발생할 수 있는 주요 위험(시장 위험, 신용 위험, 유동성 위험)을
+            관리합니다. 이를 위해 고정이자와 변동이자 비율을 혼용하며, 이사회
+            승인 하에 위험을 통제하고 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. 주요 계약 및 연구개발 활동</h2>
+          <ul>
+            <li>
+              <strong>T.H INT.</strong>: 북미시장 염료판매법인 합작설립
+              (계약금액: 5만불)
+            </li>
+            <li>
+              <strong>엑소이(주)</strong>: 터키 현지 합작법인 설립 (계약금액:
+              3백5십만불)
+            </li>
+          </ul>
+          <p>
+            기아는 중앙연구소와 국내외 생산 공장에서 연구개발을 진행하고 있으며,
+            2023년 연구개발비는 약 1,047억 원입니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. 기타 참고 사항</h2>
+          <p>
+            기아는 염료, 전자재료, 화학 부문에서 활발히 활동하며, 글로벌
+            시장에서 경쟁력을 강화하고 있습니다. 친환경 인증 획득 및 글로벌 시장
+            확장 전략을 통해 경쟁력을 유지하고 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. 재무 현황</h2>
+          <ul>
+            <li><strong>총 자산</strong>: 123조 4,568억 원</li>
+            <li><strong>부채</strong>: 56조 7,891억 원</li>
+            <li><strong>순이익</strong>: 6조 7,891억 원</li>
+          </ul>
+        </section>
+      </main>
     </div>
 
-    <div class="section">
-      <h2>2. 사업 개요</h2>
-      <p>
-        기아 주식회사는 다양한 차량과 부품의 제조 및 판매를 주력 사업으로
-        운영하고 있습니다. 특히 완성차, 부품, 차량 정비 서비스 등을 제공하며,
-        군용 차량 제조도 포함됩니다. 최근 사업 목적에 금융상품판매대리·중개업을
-        추가하여 인증중고차 플랫폼을 통한 할부금융 중개도 수행하고 있습니다.
-      </p>
-    </div>
+    <footer id="footer">
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="mailto:ssmman0121@gmail.com" target="_blank"
+          ><i class="fab fa-google"></i> 구글 메일</a
+        >
+        <a href="mailto:naver0460@naver.com" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버 메일</a
+        >
+        <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
+          ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
+        >
+      </div>
+    </footer>
 
-    <div class="section">
-      <h2>3. 영업 실적</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>구분</th>
-            <th>2023년</th>
-            <th>2022년</th>
-            <th>2021년</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>매출액</td>
-            <td>99,808,420백만원</td>
-            <td>87,588,320백만원</td>
-            <td>85,239,100백만원</td>
-          </tr>
-          <tr>
-            <td>영업이익</td>
-            <td>11,607,873백만원</td>
-            <td>7,234,563백만원</td>
-            <td>6,789,123백만원</td>
-          </tr>
-          <tr>
-            <td>영업이익률</td>
-            <td>11.6%</td>
-            <td>8.3%</td>
-            <td>7.9%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="section">
-      <h2>4. 사업 부문</h2>
-      <p>
-        기아의 사업 부문은 주로 완성차 제조와 부품 판매로 이루어집니다. 주요
-        차종으로는 승용차, RV, 상용차가 있으며, 대표 차종으로는 모닝, 스포티지,
-        EV6 등이 있습니다. 기아는 글로벌 시장에서 활동하며, 특히 미국, 인도,
-        슬로바키아, 멕시코 등지에 생산 공장을 운영하고 있습니다.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>5. 위험 관리 및 파생 거래</h2>
-      <p>
-        기아는 다양한 금융 부채와 자산을 보유하고 있으며, 금융 상품에서 발생할
-        수 있는 주요 위험은 시장 위험, 신용 위험, 유동성 위험입니다. 이를
-        관리하기 위해 고정이자와 변동이자를 혼용하고 있으며, 이사회에서 승인된
-        원칙에 따라 위험을 관리하고 있습니다.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>6. 주요 계약 및 연구개발 활동</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>계약 상대방</th>
-            <th>계약 체결 시기 및 기간</th>
-            <th>계약 내용</th>
-            <th>계약 금액</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>T.H INT.</td>
-            <td>1997.06.24~</td>
-            <td>북미시장 염료판매법인 합작설립</td>
-            <td>5만불</td>
-          </tr>
-          <tr>
-            <td>엑소이(주)</td>
-            <td>1997.06.11~</td>
-            <td>터키 현지 합작법인 설립</td>
-            <td>3백5십만불</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        연구개발 활동은 중앙연구소와 제1~7공장에서 진행되며, 연구개발비는 2023년
-        기준 1,047억원입니다.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>7. 기타 참고 사항</h2>
-      <p>
-        기아는 염료, 전자재료, 화학 부문에서 활발히 활동 중이며, 글로벌 시장에서
-        경쟁력을 유지하기 위해 연구개발과 생산성 개선에 지속적으로 투자하고
-        있습니다. 특히 친환경 인증 획득 및 글로벌 시장 확장을 위한 전략을 추진
-        중입니다.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>8. 재무 현황</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>구분</th>
-            <th>2023년</th>
-            <th>2022년</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>자산</td>
-            <td>123,456,789백만원</td>
-            <td>115,678,900백만원</td>
-          </tr>
-          <tr>
-            <td>부채</td>
-            <td>56,789,123백만원</td>
-            <td>52,345,678백만원</td>
-          </tr>
-          <tr>
-            <td>순이익</td>
-            <td>6,789,123백만원</td>
-            <td>5,234,567백만원</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

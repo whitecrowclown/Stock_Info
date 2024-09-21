@@ -4,119 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>금호전기 사업 보고서 요약</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>금호전기 사업 보고서 요약</h1>
+    <header>
+      <h1>금호전기 사업 보고서 요약</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- 1. 기본 정보 -->
-    <section>
-      <h2>1. 기본 정보</h2>
-      <p><strong>회사명:</strong> 금호전기주식회사</p>
-      <p><strong>상장 코드:</strong> 001210</p>
-      <p><strong>상장 시장:</strong> KOSPI</p>
-      <p><strong>산업:</strong> 산업재</p>
-    </section>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#performance">영업 실적</a></li>
+            <li><a href="#business-division">사업 부문</a></li>
+            <li><a href="#products">주요 제품 및 매출</a></li>
+            <li><a href="#raw-materials">원재료 및 생산설비</a></li>
+            <li><a href="#rnd">연구 개발</a></li>
+            <li><a href="#market">시장 상황</a></li>
+            <li><a href="#competition">경쟁 요소</a></li>
+            <li><a href="#financials">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <!-- 2. 사업 개요 -->
-    <section>
-      <h2>2. 사업 개요</h2>
-      <p>
-        금호전기는 1935년에 창립되어 주로 조명기기를 제조하고 판매하는 사업을
-        운영하고 있습니다. 주요 제품은 LED 조명, 직관형 및 전구식 형광램프
-        등입니다.
-      </p>
-      <p>
-        본사는 서울특별시 영등포구 여의도동에 위치하고 있으며, 주요 생산 공장은
-        경기도 화성시 동탄에 위치하고 있습니다.
-      </p>
-    </section>
+      <main>
+        <section id="basic-info">
+          <h2>1. 기본 정보</h2>
+          <ul>
+            <li><strong>회사명:</strong> 금호전기주식회사</li>
+            <li><strong>상장 코드:</strong> 001210</li>
+            <li><strong>상장 시장:</strong> KOSPI</li>
+            <li><strong>산업:</strong> 산업재</li>
+          </ul>
+        </section>
 
-    <!-- 3. 영업 실적 -->
-    <section>
-      <h2>3. 영업 실적</h2>
-      <p><strong>2023년 매출:</strong> 53,373백만원</p>
-      <p><strong>영업이익:</strong> -8,229백만원</p>
-      <p>매출은 주로 일반 조명 및 기타 부문에서 발생하였습니다.</p>
-    </section>
+        <section id="business-overview">
+          <h2>2. 사업 개요</h2>
+          <p>
+            금호전기는 1935년에 창립되어 주로 조명기기를 제조하고 판매하는
+            사업을 운영하고 있습니다. 주요 제품은 LED 조명, 직관형 및 전구식
+            형광램프 등입니다.
+          </p>
+          <p>
+            본사는 서울특별시 영등포구 여의도동에 위치하고 있으며, 주요 생산
+            공장은 경기도 화성시 동탄에 위치하고 있습니다.
+          </p>
+        </section>
 
-    <!-- 4. 사업 부문 -->
-    <section>
-      <h2>4. 사업 부문</h2>
-      <p>
-        금호전기는 조명기기 제조 및 판매 부문을 주요 사업으로 운영하고 있습니다.
-        주요 제품군은 LED 조명, 직관형 및 전구식 형광램프, 무전극 램프 등이
-        있습니다.
-      </p>
-      <p>안전 관리 서비스는 별도의 사업으로 포함되지 않았습니다.</p>
-    </section>
+        <section id="sales-performance">
+          <h2>3. 영업 실적</h2>
+          <p><strong>2023년 매출:</strong> 53,373백만원</p>
+          <p><strong>영업이익:</strong> -8,229백만원</p>
+          <p>매출은 주로 일반 조명 및 기타 부문에서 발생하였습니다.</p>
+        </section>
 
-    <!-- 5. 주요 제품 및 매출 -->
-    <section>
-      <h2>5. 주요 제품 및 매출</h2>
-      <ul>
-        <li>일반조명 (LED 조명 포함): 52,298백만원</li>
-        <li>기타 부문: 13,029백만원</li>
-      </ul>
-      <p>주요 제품의 매출은 LED 조명 및 형광램프 등에서 발생합니다.</p>
-    </section>
+        <section id="business-division">
+          <h2>4. 사업 부문</h2>
+          <p>
+            금호전기는 조명기기 제조 및 판매 부문을 주요 사업으로 운영하고
+            있습니다. 주요 제품군은 LED 조명, 직관형 및 전구식 형광램프, 무전극
+            램프 등이 있습니다.
+          </p>
+          <p>안전 관리 서비스는 별도의 사업으로 포함되지 않았습니다.</p>
+        </section>
 
-    <!-- 6. 원재료 및 생산설비 -->
-    <section>
-      <h2>6. 원재료 및 생산설비</h2>
-      <p>
-        주요 원재료는 LED 패키지(PKG) 등이 있으며, 주요 거래처는
-        알에스에스테크윈, 이도베스트원 주식회사 등이 있습니다.
-      </p>
-    </section>
+        <section id="products-sales">
+          <h2>5. 주요 제품 및 매출</h2>
+          <ul>
+            <li>일반조명 (LED 조명 포함): 52,298백만원</li>
+            <li>기타 부문: 13,029백만원</li>
+          </ul>
+          <p>주요 제품의 매출은 LED 조명 및 형광램프 등에서 발생합니다.</p>
+        </section>
 
-    <!-- 7. 연구 개발 -->
-    <section>
-      <h2>7. 연구 개발</h2>
-      <p>
-        금호전기는 LED 조명 관련 기술 개발에 연구개발비를 투자하고 있으며,
-        2023년 연구개발비는 약 6,812백만원입니다.
-      </p>
-    </section>
+        <section id="raw-materials">
+          <h2>6. 원재료 및 생산설비</h2>
+          <p>
+            주요 원재료는 LED 패키지(PKG) 등이 있으며, 주요 거래처는
+            알에스에스테크윈, 이도베스트원 주식회사 등이 있습니다.
+          </p>
+        </section>
 
-    <!-- 8. 시장 상황 -->
-    <section>
-      <h2>8. 시장 상황</h2>
-      <p>
-        글로벌 LED 조명 시장은 꾸준히 성장 중이며, 금호전기는 기술 혁신을 통해
-        경쟁력을 유지하고자 합니다.
-      </p>
-    </section>
+        <section id="rnd">
+          <h2>7. 연구 개발</h2>
+          <p>
+            금호전기는 LED 조명 관련 기술 개발에 연구개발비를 투자하고 있으며,
+            2023년 연구개발비는 약 6,812백만원입니다.
+          </p>
+        </section>
 
-    <!-- 9. 경쟁 요소 -->
-    <section>
-      <h2>9. 경쟁 요소</h2>
-      <p>
-        금호전기는 기술력과 품질을 기반으로 LED 조명 시장에서 경쟁력을 유지하고
-        있습니다. 원재료의 안정적인 확보와 가격 변동에 따른 경쟁이 존재합니다.
-      </p>
-    </section>
+        <section id="market-conditions">
+          <h2>8. 시장 상황</h2>
+          <p>
+            글로벌 LED 조명 시장은 꾸준히 성장 중이며, 금호전기는 기술 혁신을
+            통해 경쟁력을 유지하고자 합니다.
+          </p>
+        </section>
 
-    <!-- 10. 재무 현황 -->
-    <section>
-      <h2>10. 재무 현황</h2>
-      <p><strong>자산:</strong> 18,521,507천원</p>
-      <p><strong>부채:</strong> 상세 정보 없음</p>
-      <p><strong>순이익:</strong> -8,229백만원 (2023년 기준)</p>
-    </section>
-  </body>
+        <section id="competitive-factors">
+          <h2>9. 경쟁 요소</h2>
+          <p>
+            금호전기는 기술력과 품질을 기반으로 LED 조명 시장에서 경쟁력을
+            유지하고 있습니다. 원재료의 안정적인 확보와 가격 변동에 따른 경쟁이
+            존재합니다.
+          </p>
+        </section>
 
-  <footer id="footer">
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-    <div>
-      <a href="mailto:ssmman0121@gmail.com" target="_blank"
-        ><i class="fab fa-google"></i> 구글 메일</a
-      >
-      <a href="mailto:naver0460@naver.com" target="_blank"
-        ><i class="fab fa-naver"></i> 네이버 메일</a
-      >
-      <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
-        ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
-      >
+        <section id="financial-status">
+          <h2>10. 재무 현황</h2>
+          <p><strong>자산:</strong> 18,521,507천원</p>
+          <p><strong>부채:</strong> 상세 정보 없음</p>
+          <p><strong>순이익:</strong> -8,229백만원 (2023년 기준)</p>
+        </section>
+      </main>
     </div>
-  </footer>
+
+    <footer id="footer">
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="mailto:ssmman0121@gmail.com" target="_blank"
+          ><i class="fab fa-google"></i> 구글 메일</a
+        >
+        <a href="mailto:naver0460@naver.com" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버 메일</a
+        >
+        <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
+          ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

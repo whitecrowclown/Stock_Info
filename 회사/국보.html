@@ -5,96 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>주식회사 국보 - 사업 보고서 요약</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <h1>주식회사 국보 - 사업 보고서 요약</h1>
+      <p>
+        <strong>상장 코드:</strong> 001140 | <strong>상장 시장:</strong> KOSPI
+      </p>
+      <p><strong>GICS:</strong> 소재</p>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section>
-      <h2>1. 기본 정보</h2>
-      <ul>
-        <li><strong>회사명:</strong> 주식회사 국보</li>
-        <li><strong>상장 코드:</strong> 001140</li>
-        <li><strong>상장 시장:</strong> KOSPI</li>
-        <li><strong>GICS:</strong> 소재</li>
-      </ul>
-    </section>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#business-performance">영업 실적</a></li>
+            <li><a href="#business-segments">사업 부문</a></li>
+            <li><a href="#main-products">주요 제품 및 매출</a></li>
+            <li>
+              <a href="#raw-materials-and-production">원재료 및 생산설비</a>
+            </li>
+            <li><a href="#r&d">연구 개발</a></li>
+            <li><a href="#market-status">시장 상황</a></li>
+            <li><a href="#competitive-factors">경쟁 요소</a></li>
+            <li><a href="#financial-status">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <section>
-      <h2>2. 사업 개요</h2>
-      <p>
-        주식회사 국보는 1953년에 설립되어 화물자동차 운송, 보관, 하역 사업을
-        영위하는 회사로, 1989년 KOSPI 시장에 상장되었습니다. 본사는 부산광역시에
-        위치하며, 주요 종속기업으로는 아그노스(주) 등이 있습니다.
-      </p>
-    </section>
+      <main>
+        <section id="basic-info">
+          <h2>1. 기본 정보</h2>
+          <p><strong>회사명:</strong> 주식회사 국보</p>
+          <p><strong>상장 코드:</strong> 001140</p>
+          <p><strong>상장 시장:</strong> KOSPI</p>
+          <p><strong>GICS:</strong> 소재</p>
+        </section>
 
-    <section>
-      <h2>3. 영업 실적</h2>
-      <p>
-        2023년 기준 매출액은 65,925백만 원으로, 전기 대비 10,844백만 원
-        감소했습니다. 영업 손실은 12,393백만 원으로 전년보다 137.51%
-        증가했습니다.
-      </p>
-    </section>
+        <section id="business-overview">
+          <h2>2. 사업 개요</h2>
+          <p>
+            주식회사 국보는 1953년에 설립되어 화물자동차 운송, 보관, 하역 사업을
+            영위하는 회사로, 1989년 KOSPI 시장에 상장되었습니다. 본사는
+            부산광역시에 위치하며, 주요 종속기업으로는 아그노스(주) 등이
+            있습니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>4. 사업 부문</h2>
-      <p>
-        주요 사업은 화물 운송, 보관, 하역업을 중심으로 하며, 최근에는 방역 관련
-        제품의 제조 및 수출입 사업도 포함하고 있습니다.
-      </p>
-    </section>
+        <section id="business-performance">
+          <h2>3. 영업 실적</h2>
+          <p>
+            2023년 기준 매출액은 65,925백만 원으로, 전기 대비 10,844백만 원
+            감소했습니다. 영업 손실은 12,393백만 원으로 전년보다 137.51%
+            증가했습니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>5. 주요 제품 및 매출</h2>
-      <p>
-        주요 제품은 화물 운송 서비스 및 방역 관련 제품이며, 매출 비중이 높은
-        항목입니다.
-      </p>
-    </section>
+        <section id="business-segments">
+          <h2>4. 사업 부문</h2>
+          <p>
+            주요 사업은 화물 운송, 보관, 하역업을 중심으로 하며, 최근에는 방역
+            관련 제품의 제조 및 수출입 사업도 포함하고 있습니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>6. 원재료 및 생산설비</h2>
-      <p>
-        주요 원재료는 국내외 물류 네트워크를 통해 조달하며, 방역 제품 원재료는
-        국내외 공급처에서 조달하여 생산합니다.
-      </p>
-    </section>
+        <section id="main-products">
+          <h2>5. 주요 제품 및 매출</h2>
+          <p>
+            주요 제품은 화물 운송 서비스 및 방역 관련 제품이며, 매출 비중이 높은
+            항목입니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>7. 연구 개발</h2>
-      <p>
-        주식회사 국보는 방역 관련 제품의 연구 개발에 집중하며, 지속적인 품질
-        향상과 제품 다양화를 목표로 하고 있습니다.
-      </p>
-    </section>
+        <section id="raw-materials-and-production">
+          <h2>6. 원재료 및 생산설비</h2>
+          <p>
+            주요 원재료는 국내외 물류 네트워크를 통해 조달하며, 방역 제품
+            원재료는 국내외 공급처에서 조달하여 생산합니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>8. 시장 상황</h2>
-      <p>
-        물류 및 운송업 시장은 경기 불황으로 인해 수요 감소의 영향을 받고 있으나,
-        방역 제품의 수요는 증가하고 있습니다. 회사는 이러한 변화에 맞춰 신사업
-        기회를 모색하고 있습니다.
-      </p>
-    </section>
+        <section id="r&d">
+          <h2>7. 연구 개발</h2>
+          <p>
+            주식회사 국보는 방역 관련 제품의 연구 개발에 집중하며, 지속적인 품질
+            향상과 제품 다양화를 목표로 하고 있습니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>9. 경쟁 요소</h2>
-      <p>
-        국내외 경쟁사는 저가 공세를 펼치고 있으며, 국보는 고부가가치 제품 및
-        서비스 차별화를 통해 경쟁력을 유지하고 있습니다.
-      </p>
-    </section>
+        <section id="market-status">
+          <h2>8. 시장 상황</h2>
+          <p>
+            물류 및 운송업 시장은 경기 불황으로 인해 수요 감소의 영향을 받고
+            있으나, 방역 제품의 수요는 증가하고 있습니다. 회사는 이러한 변화에
+            맞춰 신사업 기회를 모색하고 있습니다.
+          </p>
+        </section>
 
-    <section>
-      <h2>10. 재무 현황</h2>
-      <p>
-        2023년 말 기준 자산은 91,420백만 원, 부채는 62,049백만 원, 자본은
-        29,371백만 원입니다.
-      </p>
-    </section>
+        <section id="competitive-factors">
+          <h2>9. 경쟁 요소</h2>
+          <p>
+            국내외 경쟁사는 저가 공세를 펼치고 있으며, 국보는 고부가가치 제품 및
+            서비스 차별화를 통해 경쟁력을 유지하고 있습니다.
+          </p>
+        </section>
+
+        <section id="financial-status">
+          <h2>10. 재무 현황</h2>
+          <p>
+            2023년 말 기준 자산은 91,420백만 원, 부채는 62,049백만 원, 자본은
+            29,371백만 원입니다.
+          </p>
+        </section>
+      </main>
+    </div>
 
     <footer id="footer">
       <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
@@ -110,5 +163,7 @@
         >
       </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

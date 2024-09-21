@@ -4,95 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>까뮤이앤씨 - 사업 보고서 요약</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #0033cc;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      main {
-        padding: 20px;
-      }
-      h1 {
-        color: #333;
-      }
-      .section {
-        background-color: white;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #0033cc;
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-      a {
-        color: #0033cc;
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>까뮤이앤씨 (013700) 사업 보고서 요약</h1>
+      <h1>까뮤이앤씨 - 사업 보고서 요약</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="section">
-        <h2>기본 정보</h2>
-        <p>산업 분야: 산업재</p>
-        <p>상장 시장: KOSPI</p>
-        <p>국가: 대한민국</p>
-      </section>
 
-      <section class="section">
-        <h2>회사 개요</h2>
-        <p>
-          까뮤이앤씨는 1978년에 설립된 종합 건설 회사로, Precast Concrete(PC)
-          공법을 활용하여 건축, 토목 공사 등을 주요 사업으로 영위하고 있습니다.
-        </p>
-      </section>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#performance">영업 실적</a></li>
+            <li><a href="#business-division">사업 부문</a></li>
+            <li><a href="#products">주요 제품 및 매출</a></li>
+            <li><a href="#raw-materials">원재료 및 생산설비</a></li>
+            <li><a href="#rnd">연구 개발</a></li>
+            <li><a href="#market">시장 상황</a></li>
+            <li><a href="#competition">경쟁 요소</a></li>
+            <li><a href="#financials">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-      <section class="section">
-        <h2>주요 제품 및 서비스</h2>
-        <p>
-          주요 매출 제품: 물류센터, 아파트, 오피스텔, 상업시설 등 PC 건축 부품
-          제작 및 설치
-        </p>
-        <p>주요 고객: 현대건설, 한국토지주택공사 등</p>
-      </section>
+      <main>
+        <section>
+          <h2>1. 기본 정보</h2>
+          <p><strong>회사명:</strong> 까뮤이앤씨</p>
+          <p><strong>상장 코드:</strong> 013700</p>
+          <p><strong>상장 시장:</strong> KOSPI</p>
+          <p><strong>GICS 산업:</strong> 산업재</p>
+        </section>
 
-      <section class="section">
-        <h2>연구개발 활동</h2>
-        <p>
-          R&D 팀 운영 중으로, 다양한 건축 기술 개선과 자동화 공법 개발을 진행
-          중입니다.
-        </p>
-      </section>
+        <section>
+          <h2>2. 사업 개요</h2>
+          <p>
+            까뮤이앤씨는 1978년에 설립된 종합 건설 회사로, Precast Concrete(PC)
+            공법을 기반으로 건축, 토목 공사 등의 주요 사업을 운영하고 있습니다.
+            물류센터, 아파트, 오피스텔 등 다양한 시설의 건축 부품 제작 및 설치를
+            통해 성장하고 있습니다.
+          </p>
+        </section>
 
-      <section class="section">
-        <h2>재무 정보</h2>
-        <p>2023년 매출: 2,788억 원</p>
-        <p>매출 비율: 건축사업 (58.4%), PC사업 (39.8%), 기타 (1.8%)</p>
-      </section>
-    </main>
-    <footer>
-      <p>
-        &copy; 2024 까뮤이앤씨 |
-        <a href="http://www.camusenc.com">공식 웹사이트</a>
-      </p>
+        <section>
+          <h2>3. 주요 제품 및 매출</h2>
+          <ul>
+            <li>
+              <strong>주요 매출 제품:</strong> 물류센터, 아파트, 오피스텔,
+              상업시설 등의 PC 건축 부품 제작 및 설치
+            </li>
+            <li><strong>주요 고객:</strong> 현대건설, 한국토지주택공사 등</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. 연구개발 활동</h2>
+          <p>
+            까뮤이앤씨는 R&D 팀을 운영하며, 다양한 건축 기술 개선과 자동화 공법
+            개발을 통해 혁신적인 솔루션을 도입하고 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. 재무 정보</h2>
+          <p>
+            2023년 기준 매출은 2,788억 원으로, 건축사업이 58.4%, PC사업이 39.8%,
+            기타 부문이 1.8%를 차지했습니다.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer id="footer">
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="mailto:ssmman0121@gmail.com" target="_blank"
+          ><i class="fab fa-google"></i> 구글 메일</a
+        >
+        <a href="mailto:naver0460@naver.com" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버 메일</a
+        >
+        <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
+          ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
+        >
+      </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

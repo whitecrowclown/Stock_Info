@@ -4,121 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>비즈니스 보고서 요약</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>회사 보고서</h1>
-
-    <!-- 1. 기본 정보 -->
-    <section>
-      <h2>1. 기본 정보</h2>
-      <p><strong>회사명:</strong> 금비</p>
-      <p><strong>상장 코드:</strong> 008870</p>
-      <p><strong>상장 시장:</strong> KOSPI</p>
+    <header>
+      <h1>회사 보고서</h1>
+      <p>
+        <strong>상장 코드:</strong> 008870 | <strong>상장 시장:</strong> KOSPI
+      </p>
       <p><strong>산업:</strong> 산업재</p>
-    </section>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0);" onclick="toggleDropdown()">GICS</a>
+            <div class="dropdown-content" id="gicsDropdown">
+              <a href="../GICS/Consumer Discretionary.html">경기소비재</a>
+              <a href="../GICS/Financials.html">금융</a>
+              <a href="../GICS/Industrials.html">산업재</a>
+              <a href="../GICS/Materials.html">소재</a>
+              <a href="../GICS/Energy.html">에너지</a>
+              <a href="../GICS/Utilities.html">유틸리티</a>
+              <a href="../GICS/Information Technology.html">정보기술</a>
+              <a href="../GICS/Communication Services.html"
+                >커뮤니케이션 서비스</a
+              >
+              <a href="../GICS/Consumer Staples.html">필수소비재</a>
+              <a href="../GICS/Health Care.html">헬스케어</a>
+            </div>
+          </li>
+          <li><a href="#kospi">KOSPI</a></li>
+          <li><a href="#kosdaq">KOSDAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- 2. 사업 개요 -->
-    <section>
-      <h2>2. 사업 개요</h2>
-      <p>
-        <strong>비전:</strong> 유리제품 제조업 및 화장품 매매업을 기반으로 지속
-        가능한 성장 추구
-      </p>
-      <p>
-        <strong>사업 모델:</strong> 경기도 이천시 및 충청남도 아산시에 공장을
-        운영하며, 주로 유리병 및 플라스틱 용기를 제조하여 다양한 산업에 공급
-      </p>
-    </section>
+    <div class="container">
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#basic-info">기본 정보</a></li>
+            <li><a href="#business-overview">사업 개요</a></li>
+            <li><a href="#sales-performance">영업 실적</a></li>
+            <li><a href="#business-segment">사업 부문</a></li>
+            <li><a href="#products-revenue">주요 제품 및 매출</a></li>
+            <li><a href="#raw-materials-facilities">원재료 및 생산설비</a></li>
+            <li><a href="#research-development">연구 개발</a></li>
+            <li><a href="#market-situation">시장 상황</a></li>
+            <li><a href="#competitive-elements">경쟁 요소</a></li>
+            <li><a href="#financial-status">재무 현황</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <!-- 3. 영업 실적 -->
-    <section>
-      <h2>3. 영업 실적</h2>
-      <p><strong>최근 매출액:</strong> 250,958,273원 (제 51기 기준)</p>
-      <p>
-        <strong>총 매출액 비율:</strong> 유리병 및 플라스틱 용기 제품이 52.7%를
-        차지
-      </p>
-    </section>
+      <main>
+        <!-- 1. 기본 정보 -->
+        <section id="basic-info">
+          <h2>1. 기본 정보</h2>
+          <ul>
+            <li><strong>회사명:</strong> 금비</li>
+            <li><strong>상장 코드:</strong> 008870</li>
+            <li><strong>상장 시장:</strong> KOSPI</li>
+            <li><strong>산업:</strong> 산업재</li>
+          </ul>
+        </section>
 
-    <!-- 4. 사업 부문 -->
-    <section>
-      <h2>4. 사업 부문</h2>
-      <p>
-        금비의 주요 사업은 유리병 및 화장품 관련 플라스틱 용기 제조 및
-        판매입니다.
-      </p>
-      <p>
-        <strong>유리병 부문:</strong> 소주병, 주스병 등 다양한 음료 포장용기를
-        생산
-      </p>
-      <p><strong>플라스틱 용기 부문:</strong> 화장품 용기 제조</p>
-    </section>
+        <!-- 2. 사업 개요 -->
+        <section id="business-overview">
+          <h2>2. 사업 개요</h2>
+          <p>
+            <strong>비전:</strong> 유리제품 제조업 및 화장품 매매업을 기반으로
+            지속 가능한 성장 추구
+          </p>
+          <p>
+            <strong>사업 모델:</strong> 경기도 이천시 및 충청남도 아산시에
+            공장을 운영하며, 주로 유리병 및 플라스틱 용기를 제조하여 다양한
+            산업에 공급
+          </p>
+        </section>
 
-    <!-- 5. 주요 제품 및 매출 -->
-    <section>
-      <h2>5. 주요 제품 및 매출</h2>
-      <p><strong>유리병:</strong> 소주병, 주스병 등으로 주요 제품 매출 52.7%</p>
-      <p><strong>플라스틱 용기:</strong> 화장품 용기 매출 비중 10.1%</p>
-    </section>
+        <!-- 3. 영업 실적 -->
+        <section id="sales-performance">
+          <h2>3. 영업 실적</h2>
+          <p><strong>최근 매출액:</strong> 250,958,273원 (제 51기 기준)</p>
+          <p>
+            <strong>총 매출액 비율:</strong> 유리병 및 플라스틱 용기 제품이
+            52.7%를 차지
+          </p>
+        </section>
 
-    <!-- 6. 원재료 및 생산설비 -->
-    <section>
-      <h2>6. 원재료 및 생산설비</h2>
-      <p><strong>주요 원재료:</strong> 유리원료(규사, 석회석)</p>
-      <p>
-        <strong>생산 설비:</strong> 경기도 이천시 및 충청남도 아산시에 위치한
-        공장 가동
-      </p>
-    </section>
+        <!-- 4. 사업 부문 -->
+        <section id="business-segment">
+          <h2>4. 사업 부문</h2>
+          <p>
+            금비의 주요 사업은 유리병 및 화장품 관련 플라스틱 용기 제조 및
+            판매입니다.
+          </p>
+          <p>
+            <strong>유리병 부문:</strong> 소주병, 주스병 등 다양한 음료
+            포장용기를 생산
+          </p>
+          <p><strong>플라스틱 용기 부문:</strong> 화장품 용기 제조</p>
+        </section>
 
-    <!-- 7. 연구 개발 -->
-    <section>
-      <h2>7. 연구 개발</h2>
-      <p>
-        금비는 플라스틱 용기 및 유리병 제조 공정의 개선을 위한 연구 개발을
-        지속적으로 추진하고 있습니다.
-      </p>
-    </section>
+        <!-- 5. 주요 제품 및 매출 -->
+        <section id="products-revenue">
+          <h2>5. 주요 제품 및 매출</h2>
+          <p>
+            <strong>유리병:</strong> 소주병, 주스병 등으로 주요 제품 매출 52.7%
+          </p>
+          <p><strong>플라스틱 용기:</strong> 화장품 용기 매출 비중 10.1%</p>
+        </section>
 
-    <!-- 8. 시장 상황 -->
-    <section>
-      <h2>8. 시장 상황</h2>
-      <p>
-        국내 유리 및 플라스틱 용기 시장에서 금비는 주요 공급자로 자리 잡고
-        있으며, 지속적으로 시장 점유율을 확대하고 있습니다.
-      </p>
-    </section>
+        <!-- 6. 원재료 및 생산설비 -->
+        <section id="raw-materials-facilities">
+          <h2>6. 원재료 및 생산설비</h2>
+          <p><strong>주요 원재료:</strong> 유리원료(규사, 석회석)</p>
+          <p>
+            <strong>생산 설비:</strong> 경기도 이천시 및 충청남도 아산시에
+            위치한 공장 가동
+          </p>
+        </section>
 
-    <!-- 9. 경쟁 요소 -->
-    <section>
-      <h2>9. 경쟁 요소</h2>
-      <p>
-        경쟁사 대비 품질과 가격에서 경쟁력을 유지하고 있으며, 지속적인 연구
-        개발을 통해 경쟁 우위를 강화하고 있습니다.
-      </p>
-    </section>
+        <!-- 7. 연구 개발 -->
+        <section id="research-development">
+          <h2>7. 연구 개발</h2>
+          <p>
+            금비는 플라스틱 용기 및 유리병 제조 공정의 개선을 위한 연구 개발을
+            지속적으로 추진하고 있습니다.
+          </p>
+        </section>
 
-    <!-- 10. 재무 현황 -->
-    <section>
-      <h2>10. 재무 현황</h2>
-      <p><strong>자산:</strong> 100,000,000원</p>
-      <p><strong>부채:</strong> 50,000,000원</p>
-      <p><strong>순이익:</strong> 10,000,000원</p>
-    </section>
-  </body>
+        <!-- 8. 시장 상황 -->
+        <section id="market-situation">
+          <h2>8. 시장 상황</h2>
+          <p>
+            국내 유리 및 플라스틱 용기 시장에서 금비는 주요 공급자로 자리 잡고
+            있으며, 지속적으로 시장 점유율을 확대하고 있습니다.
+          </p>
+        </section>
 
-  <footer id="footer">
-    <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
-    <div>
-      <a href="mailto:ssmman0121@gmail.com" target="_blank"
-        ><i class="fab fa-google"></i> 구글 메일</a
-      >
-      <a href="mailto:naver0460@naver.com" target="_blank"
-        ><i class="fab fa-naver"></i> 네이버 메일</a
-      >
-      <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
-        ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
-      >
+        <!-- 9. 경쟁 요소 -->
+        <section id="competitive-elements">
+          <h2>9. 경쟁 요소</h2>
+          <p>
+            경쟁사 대비 품질과 가격에서 경쟁력을 유지하고 있으며, 지속적인 연구
+            개발을 통해 경쟁 우위를 강화하고 있습니다.
+          </p>
+        </section>
+
+        <!-- 10. 재무 현황 -->
+        <section id="financial-status">
+          <h2>10. 재무 현황</h2>
+          <p><strong>자산:</strong> 100,000,000원</p>
+          <p><strong>부채:</strong> 50,000,000원</p>
+          <p><strong>순이익:</strong> 10,000,000원</p>
+        </section>
+      </main>
     </div>
-  </footer>
+
+    <footer id="footer">
+      <p>&copy; 후원 : NH 352-0962-9263-33 신성민</p>
+      <div>
+        <a href="mailto:ssmman0121@gmail.com" target="_blank"
+          ><i class="fab fa-google"></i> 구글 메일</a
+        >
+        <a href="mailto:naver0460@naver.com" target="_blank"
+          ><i class="fab fa-naver"></i> 네이버 메일</a
+        >
+        <a href="javascript:void(0);" style="color: gray; cursor: not-allowed"
+          ><i class="fab fa-kakao"></i> 카카오톡 (미운영 중)</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

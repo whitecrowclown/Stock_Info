@@ -1,11 +1,10 @@
 function toggleDropdown() {
-  var dropdown = document.getElementById("gicsDropdown");
-  dropdown.classList.toggle("show");
+  document.getElementById("gicsDropdown").classList.toggle("show");
 }
 
-// 클릭 시 드롭다운 외부를 클릭하면 닫히는 동작
+// 드롭다운 클릭 시 닫기
 window.onclick = function (event) {
-  if (!event.target.matches(".dropdown button")) {
+  if (!event.target.matches(".dropdown a")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     for (var i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

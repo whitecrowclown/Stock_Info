@@ -80,6 +80,19 @@ header nav ul li a {
   margin: 0 auto; /* 중앙 정렬 */
 }
 
+.container a {
+  color: #0288d1; /* 밝은 하늘색 */
+  text-decoration-line: none;
+  font-weight: bold; /* 방문하지 않은 링크는 굵게 */
+}
+
+/* 본문에서 방문한 링크 */
+.container a:visited {
+  color: #005b9f; /* 짙은 파란색 */
+  text-decoration-line: none; /* 방문한 링크는 밑줄 추가 */
+  font-weight: normal; /* 방문한 링크는 굵기 제거 */
+}
+
 /* 사이드바 스타일 */
 aside {
   width: 25%; /* 사이드바 너비를 전체의 25%로 설정 */

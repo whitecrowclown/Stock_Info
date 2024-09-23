@@ -42,6 +42,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #ffc107;
+
   padding-left: 5px; /* 마우스 오버 시 약간의 여백 증가 */
 }
 

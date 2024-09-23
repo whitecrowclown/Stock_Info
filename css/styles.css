@@ -1,4 +1,4 @@
-/* 전체 스타일 설정 */
+/* 공통 박스 모델 */
 * {
   box-sizing: border-box;
 }
@@ -7,157 +7,135 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e0f7fa; /* 맑은 하늘 느낌 */
-  color: #343a40; /* 기본 텍스트 색상 */
+  background-color: #b3e5fc; /* 맑은 하늘색 배경 */
+  color: #343a40;
   line-height: 1.6;
 }
 
 /* 헤더 스타일 */
 header {
-  background-color: #007bff;
-  color: white;
+  background-color: #81d4fa; /* 밝은 하늘색 헤더 */
+  color: #ffffff;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
-/* 네비게이션 스타일 */
 header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
 }
 
 header nav ul li {
-  margin: 0 15px;
+  display: inline;
+  margin-right: 15px;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #ffc107;
+  color: #0288d1; /* 하늘색 호버 효과 */
 }
 
-/* 드롭다운 메뉴 */
+/* 드롭다운 스타일 */
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  min-width: 160px;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: #0288d1; /* 하늘색 드롭다운 링크 */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #e1f5fe; /* 연한 하늘색 호버 배경 */
 }
 
-.show {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* 레이아웃 설정 */
-.wrapper {
-  display: flex; /* aside와 main을 감싸는 div에 flex 추가 */
-  width: 100%;
+.dropdown img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
+/* 경고 문구 스타일 */
+.warning {
+  font-style: italic;
+  color: red;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffe5e5;
+  border: 1px solid #ff0000;
+}
+
+/* 컨테이너 */
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 본문에서 방문하지 않은 링크 */
+.container a {
+  color: #0288d1; /* 밝은 하늘색 */
+  text-decoration-line: none;
+  font-weight: bold; /* 방문하지 않은 링크는 굵게 */
+}
+
+/* 본문에서 방문한 링크 */
+.container a:visited {
+  color: #005b9f; /* 짙은 파란색 */
+  text-decoration-line: none; /* 방문한 링크는 밑줄 추가 */
+  font-weight: normal; /* 방문한 링크는 굵기 제거 */
+}
+
+/* 사이드바 */
 aside {
-  width: 250px;
-  background-color: #f8f9fa;
-  padding: 20px;
+  width: 25%;
+  background-color: #e1f5fe; /* 연한 하늘색 배경 */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
   position: sticky;
   top: 0;
-  height: 100vh; /* 스크롤 시에도 스티키 적용 */
-  overflow-y: auto;
 }
 
-aside nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-aside nav ul li {
-  margin-bottom: 10px;
-}
-
-aside nav ul li a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-aside nav ul li a:hover {
-  color: #343a40;
-}
-
-/* 메인 콘텐츠 스타일 */
+/* 메인 콘텐츠 */
 main {
-  flex-grow: 1;
-  margin-left: 20px;
-  padding: 20px;
-  background-color: white;
+  width: 75%;
+  padding: 30px;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 1200px;
 }
 
-/* 제목 스타일 */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 20px;
-  color: #007bff;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 10px;
-}
-
-/* 테이블 스타일 */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-table th,
-table td {
-  padding: 12px;
-  border: 1px solid #ddd;
-}
-
-table th {
-  background-color: #f8f9fa;
-}
-
-table td {
-  text-align: center;
-}
-
-/* 푸터 스타일 */
+/* 푸터 */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #343a40;
+  padding: 15px;
+  background-color: #0288d1; /* 짙은 하늘색 푸터 */
   color: white;
   width: 100%;
 }
@@ -169,80 +147,47 @@ footer a {
 }
 
 footer a:hover {
-  color: #ffc107;
+  color: #ffd700; /* 금색 링크 호버 */
 }
 
-/* SNS 아이콘 */
-footer .social-icons {
-  margin-top: 10px;
+/* 리스트 스타일 */
+ul {
+  padding-left: 20px;
 }
 
-footer .social-icons a {
-  color: white;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  text-decoration: none;
+li {
+  margin-bottom: 10px;
 }
 
-footer .social-icons a:hover {
-  color: #ffc107;
-}
+/* 반응형 디자인 */
 
-/* 카드 스타일 */
-#companies {
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  flex: 1 1 calc(50% - 20px);
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-decoration: none; /* 링크에 밑줄 제거 */
-  color: inherit; /* 텍스트 색상 유지 */
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.02);
-}
-
-h3 {
-  margin: 0 0 10px;
-}
-
-p {
-  margin: 0;
-  color: #555;
-}
-
-/* 방문한 링크의 색상 변경 방지 */
-a:visited {
-  color: inherit; /* 방문한 링크 색상 유지 */
-}
-
-/* 반응형 스타일 */
+/* 최대 480px */
 @media (max-width: 480px) {
-  .wrapper {
-    flex-direction: column;
-  }
-
   aside {
     width: 100%;
     height: auto;
-    position: relative;
+  }
+  main {
+    width: 100%;
+    padding: 15px;
   }
 
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 481px ~ 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  aside {
+    width: 30%;
+  }
   main {
-    margin-left: 0;
+    width: 70%;
   }
 
   h1 {
@@ -254,16 +199,20 @@ a:visited {
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+/* 최소 769px */
+@media (min-width: 769px) {
+  aside {
+    width: 25%;
+  }
   main {
-    padding: 20px;
+    width: 75%;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }

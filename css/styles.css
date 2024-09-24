@@ -162,22 +162,129 @@ li {
 /* 반응형 디자인 */
 
 /* 최대 480px */
+
 @media (max-width: 480px) {
+  /* 전체 박스 모델 */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  /* 헤더 스타일 */
+  header {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  /* 헤더 내 네비게이션 스타일 */
+  header nav {
+    margin-top: 10px;
+  }
+
+  header nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+  }
+
+  /* 드롭다운 스타일 */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+
+  /* 컨테이너 스타일 */
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* 본문 링크 */
+  .container a {
+    text-decoration: none;
+  }
+
+  .container a:visited {
+    text-decoration: none;
+  }
+
+  /* 사이드바 스타일 (sticky 해제) */
   aside {
     width: 100%;
-    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative; /* sticky 해제 */
   }
+
+  /* 본문 스타일 */
   main {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
   }
 
   h1 {
     font-size: 1.8rem;
+    margin-bottom: 10px;
   }
 
   h2 {
     font-size: 1.5rem;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* 리스트 스타일 */
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  /* 푸터 스타일 */
+  footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  footer a {
+    margin: 0 5px;
   }
 }
 

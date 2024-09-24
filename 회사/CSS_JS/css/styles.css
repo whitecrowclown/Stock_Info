@@ -264,11 +264,12 @@ footer a:hover {
     text-decoration: none;
   }
 
-  /* 사이드바 스타일 */
+  /* 사이드바 스타일 (sticky 해제) */
   aside {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    position: relative; /* sticky 해제 */
   }
 
   /* 본문 스타일 */
@@ -431,28 +432,5 @@ footer a:hover {
 
   footer a {
     margin: 0 10px;
-  }
-}
-
-/* 예시: 미디어 (아이패드 프로 11 : 최소 769px) */
-@media (min-width: 769px) {
-  aside {
-    width: 25%; /* 데스크탑에서 사이드바 너비 조정 */
-  }
-
-  main {
-    width: 75%; /* 데스크탑에서 메인 콘텐츠 너비 조정 */
-  }
-
-  main {
-    padding: 30px; /* 패딩 증가 */
-  }
-
-  h1 {
-    font-size: 2.5rem; /* 제목 크기 조정 */
-  }
-
-  h2 {
-    font-size: 1.8rem; /* 서브 제목 크기 조정 */
   }
 }
